@@ -1,0 +1,59 @@
+:root {
+  --bg-color: #0b0604e4;
+  --text-color-gradient: linear-gradient(
+    to right,
+    rgb(149 144 252),
+    rgb(67 231 173),
+    rgb(226 212 92)
+  );
+
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-color);
+  min-height: 100vh;
+  font-family: "Bebas Neue", cursive;
+}
+
+#app {
+}
+
+img {
+  margin: auto;
+  display: block;
+  text-align: center;
+  height: 10rem;
+  align-content: center;
+}
+
+.logo.vanilla:hover {
+  filter: drop-shadow(0 0 2rem #eee600);
+}
+
+h1 {
+  font-size: 9rem;
+  background-image: var(--text-color-gradient);
+  background-clip: text;
+  color: transparent;
+
+  -webkit-background-clip: text;
+}
+
+div::after {
+  content: "";
+  height: 4px;
+  width: 100%;
+  display: block;
+  background-image: var(--text-color-gradient);
+  border-radius: 0 0 4rem 4rem;
+}
