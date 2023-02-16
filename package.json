@@ -1,10 +1,10 @@
 {
-  "name": "Vite-latest",
-  "private": true,
+  "name": "ProjectInitial",
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "start": "vite",
+    "run": "vite",
     "build": "vite build",
     "preview": "vite preview"
   },
