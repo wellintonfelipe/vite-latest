@@ -16,24 +16,24 @@
   box-sizing: border-box;
 }
 
-body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--bg-color);
+div {
+  display: grid;
+  background-image: url("../img/bg-dark.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   min-height: 100vh;
   font-family: "Bebas Neue", cursive;
 }
-
 #app {
+  display: grid;
+  justify-content: center;
+  align-self: center;
+  justify-self: center;
 }
-
 img {
-  margin: auto;
-  display: block;
-  text-align: center;
-  height: 10rem;
-  align-content: center;
+  justify-self: center;
+  height: 20rem;
 }
 
 .logo.vanilla:hover {
@@ -49,11 +49,11 @@ h1 {
   -webkit-background-clip: text;
 }
 
-div::after {
+#app::after {
   content: "";
-  height: 4px;
+  height: 8px;
   width: 100%;
-  display: block;
+  display: flex;
   background-image: var(--text-color-gradient);
   border-radius: 0 0 4rem 4rem;
 }
